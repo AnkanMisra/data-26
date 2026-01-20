@@ -1,0 +1,17 @@
+Digital identity infrastructure is the backbone of modern governance. In India, the Aadhaar system, managing over 1.3 billion biometric identities, serves as a critical gateway to financial inclusion and social welfare. Consequently, the operational efficiency of Aadhaar Seva Kendras (ASKs) is paramount. However, this efficiency is challenged by demographic fluidity; as millions migrate annually, service demand shifts spatially and temporally, creating a mismatch between static infrastructure planning and dynamic user needs.
+
+Traditional resource allocation models, reliant on decadal census data, fail to capture these rapid demographic shifts. In the Aadhaar context, migration generates a distinct demand category: demographic updates. Unlike one-time enrolments correlated with birth rates, address and biometric updates are recurrent and sensitive to workforce mobility. When populations move to industrial hubs, destination centers face sharp surges in update requests requiring distinct operational workflows, resulting in localized congestion even when national capacity appears sufficient.
+
+This paper addresses this efficiency gap by utilizing administrative transaction metadata as a real-time sensor for operational stress. Existing research often relies on static assumptions or survey-based estimates, neglecting the granular insights of transaction logs where aggregate volumes obscure the distinction between growth-driven enrolments and migration-driven updates. Without separating these demand types, policymakers lack the visibility required for dynamic resource allocation.
+
+We propose a data-driven framework to analyze operational stress within national identity infrastructure. Leveraging granular data from the UIDAI Open Data Portal, the study introduces the Update-to-Enrolment Ratio (UER), a normalized metric designed to differentiate service demand types across heterogeneous geographies. Building upon this metric, the framework applies unsupervised machine learning techniques—specifically K-Means clustering and Isolation Forest anomaly detection—to segment administrative units into distinct operational profiles and identify localized bottlenecks.
+
+This approach transforms administrative records into actionable policy intelligence, enabling a shift from reactive management to proactive infrastructure planning. By converting raw logs into clustered insights, the methodology offers a scalable blueprint for optimizing service delivery in demographically dynamic environments.
+
+The key contributions of this paper are as follows:
+
+- Development of the Update-to-Enrolment Ratio (UER), a normalized metric to quantify and differentiate operational stress caused by migration versus organic population growth.
+- Application of unsupervised learning techniques, specifically K-Means clustering with silhouette-based validation, to classify districts and pincodes into statistically distinct operational profiles.
+- Implementation of anomaly detection using Isolation Forests to identify localized infrastructure bottlenecks and irregular activity patterns not visible in aggregate reporting.
+
+The remainder of this paper is organized as follows: Section 2 reviews related work, Section 3 details the methodology and feature engineering, Section 4 presents the experimental results, Section 5 discusses the implications for governance policy, and Section 6 concludes with future directions.
